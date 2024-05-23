@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Entries</h2>
+  <ul>
+    {% for entry in entries %}
+      <li>{{ entry[1] }} - {{ entry[2] }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
